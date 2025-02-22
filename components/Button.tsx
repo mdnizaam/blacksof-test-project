@@ -3,7 +3,7 @@ interface IButtonProps {
   label: string;
   border?: boolean;
   bg?: boolean;
-  onClick?: () => {};
+  onClick?: () => void;
 }
 
 const Button: React.FC<IButtonProps> = ({ label, onClick, border, bg }) => {

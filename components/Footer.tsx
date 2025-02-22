@@ -34,12 +34,12 @@ const Footer = () => {
         </div>
 
         <div className=" w-full grid grid-cols-2 md:grid-cols-4 justify-between">
-          {footerMenu.map((item) => (
-            <div className="mb-6 md:mb-0">
+          {footerMenu.map((item, index) => (
+            <div key={index} className="mb-6 md:mb-0">
               <h2 className="text-lg  text-black">{item.heading}</h2>
               <ul className="list-none mt-2 text-gray-700 ">
-                {item.subMenu.map((sub) => (
-                  <a href={sub}>
+                {item.subMenu.map((sub, index) => (
+                  <a key={index} href={sub}>
                     {" "}
                     <li className="my-6 hover:text-[#2e3133aa]">{sub}</li>
                   </a>

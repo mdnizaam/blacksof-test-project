@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Button from "./Button";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
@@ -34,7 +35,7 @@ const Navbar = () => {
       >
         <header className="2xl:py-2 xlg:py-1 py-2 z-50">
           <div className="container h-full xl:py-3 py-1 mt-[2px] flex gap-4 items-center justify-between mx-auto">
-            <a className="" href="/">
+            <Link className="" href="/">
               <span>
                 <Image
                   src="/Supreme_logos.png"
@@ -44,7 +45,7 @@ const Navbar = () => {
                   height={130}
                 />
               </span>
-            </a>
+            </Link>
             <div className="md:flex    hidden justify-between items-center gap-x-8">
               <Button label={"Contact Us"} bg={true} />
               <button>
